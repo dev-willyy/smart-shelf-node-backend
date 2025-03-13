@@ -8,6 +8,12 @@ const config = require('config');
 async function predictExpiry(req, res, next) {
   const { barcode, temperature, humidity } = req.body;
 
+  console.log({
+    barcode,
+    temperature,
+    humidity,
+  });
+
   try {
     if (!barcode || !temperature || !humidity) {
       return res.status(400).json({
