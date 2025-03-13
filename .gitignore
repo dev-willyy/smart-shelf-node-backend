@@ -1,0 +1,18 @@
+# Secrets
+.env
+.env.local
+.env.production.local
+.env.development.local
+
+# Dependencies and build
+node_modules
+build
+
+# Private (research & planning)
+private
+
+# Editors specific
+.vscode
+
+## Platform specific
+.DS_Store
